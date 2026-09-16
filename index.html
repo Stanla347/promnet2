@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<h1>Personal Website</h1>
-<p>Selamat datang di website pribadi saya.</p>
-<a href="index.html">Home</a> | <a href="About.html">About</a> | <a href="project.html">Project</a> | <a href="Kontak.html">Kontak</a> | <a href="Riwayat.html">Riwayat</a>
-<hr>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h2>Halo, saya Sultan Maulana Akbar</h2>
-<img src="Assets/images/foto abey.jpeg" alt="Foto Sultan Maulana Akbar" width="200">
-<p>Saya adalah mahasiswa yang sedang belajar pengembangan web.
-    <br>dibuat sebagai latihan menggunakan HTML dasar tanpa CSS.</p>
 
-<p> Di website ini Anda dapat mengenal saya, melihat beberapa project, serta menghubungi saya melalui halaman contact.</p>
-<h3>Yang Sedang Saya Pelajari</h3>
-<ul>
-  <li>HTML</li>
-  <li>Algoritma Pemrograman</li>
-  <li>Basis Data</li>
-  <li>Git dan GitHub</li>
-</ul>
-<p> Silakan kunjungi halaman <a href="About.html">About</a> untuk mengetahui profil saya lebih lengkap.</p>
-<hr>
-<p>&copy; 2026 Sultan Maulana Akbar. Dibuat menggunakan HTML.</p>
+  <header id="main-header">
+    <h1>Personal Website</h1>
+    <p>Selamat datang di website pribadi saya.</p>
+    
+    <nav class="navbar">
+      <a href="Home.html">Home</a>
+      <span class="nav-separator">|</span>
+      <a href="About.html">About</a>
+      <span class="nav-separator">|</span>
+      <a href="project.html">Project</a>
+      <span class="nav-separator">|</span>
+      <a href="Kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Halo, saya Sultan Maulana Akbar</h2>
+    
+    <img id="profile-img" src="Assets/images/foto abey.jpeg" alt="Foto Sultan Maulana Akbar">
+    
+    <p>Saya adalah mahasiswa yang sedang belajar pengembangan web.
+        <br>dibuat sebagai latihan menggunakan HTML dasar tanpa CSS.</p>
+
+    <p>Di website ini Anda dapat mengenal saya, melihat beberapa project, serta menghubungi saya melalui halaman contact.</p>
+    
+    <h3>Yang Sedang Saya Pelajari</h3>
+    
+    <ul class="skill-list">
+      <li class="skill-item">HTML</li>
+      <li class="skill-item">Algoritma Pemrograman</li>
+      <li class="skill-item">Basis Data</li>
+      <li class="skill-item">Git dan GitHub</li>
+    </ul>
+
+    <p style="text-align: center; margin-top: 25px;">
+      Silakan kunjungi halaman <a href="About.html">About</a> untuk mengetahui profil saya lebih lengkap.
+    </p>
+  </main>
+
+  <footer class="footer">
+    <hr>
+    <p>&copy; 2026 Sultan Maulana Akbar. Dibuat menggunakan HTML.</p>
+  </footer>
+
 </body>
-    </html>
+</html>
